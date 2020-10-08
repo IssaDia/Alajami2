@@ -7,10 +7,8 @@ Blog Alajami (Gatsby and Contentful)
 
 -> Choix d'associer Gatsby et Contentful
 
--> Création d'un projet
+-> Découverte et installation de Gatsby (via la documentation)
 
--> Découverte de la documentation Gatsby
-
--> Découverte de Tailwind CSS
+-> Découverte et installation de Tailwind CSS
 
 
