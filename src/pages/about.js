@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-export default function Home () {
+export default function About () {
   return (
     <Layout>
-      <button className='py-4 px-4 bg-blue-600'>Button</button>
+      <p>Such wow. Very React.</p>
     </Layout>
   )
 }
