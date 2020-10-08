@@ -11,4 +11,6 @@ Blog Alajami (Gatsby and Contentful)
 
 -> Découverte et installation de Tailwind CSS
 
+->Création d'un Layout
+
 
