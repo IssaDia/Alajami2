@@ -11,4 +11,6 @@ Blog Alajami (Gatsby and Contentful)
 
 -> Découverte de la documentation Gatsby
 
+-> Découverte de Tailwind CSS
+
 
