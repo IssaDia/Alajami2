@@ -7,6 +7,8 @@ Blog Alajami (Gatsby and Contentful)
 
 -> Choix d'associer Gatsby et Contentful
 
+-> Création d'un projet
+
 -> Découverte de la documentation Gatsby
 
--> Création d'un projet
+
