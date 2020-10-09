@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
@@ -106,6 +107,11 @@ Blog Alajami (Gatsby and Contentful)
 
 Blog Alajami (Gatsby and Contentful)
 
+=======
+# Alajami2
+Blog Alajami (Gatsby and Contentful)
+
+>>>>>>> 5ec25359fcbf29e2f76515b43aebcd9b24471002
 #08/10
 
 -> Veille techno sur la technologie à utiliser pour le blog Alajami
@@ -122,6 +128,7 @@ Blog Alajami (Gatsby and Contentful)
 
 #09/10
 
+<<<<<<< HEAD
 -> Prise en main Tailwindcss (doc + tutoriel) -> Navbar Responsive Ok
 
 
@@ -130,3 +137,7 @@ Blog Alajami (Gatsby and Contentful)
 -> Prise en main Tailwindcss (doc + tutoriel)
 -> Navbar Responsive Ok
 >>>>>>> 6c5562b3494e211c44eeec5e961c2e42ff8d5af4
+=======
+-> Prise en main Tailwindcss (doc + tutoriel) 
+-> Navbar Responsive Ok
+>>>>>>> 5ec25359fcbf29e2f76515b43aebcd9b24471002
