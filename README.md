@@ -1,6 +1,6 @@
 Blog Alajami (Gatsby and Contentful)
 
-08/10
+#08/10
 
 -> Veille techno sur la technologie à utiliser pour le blog Alajami
 
@@ -13,3 +13,8 @@ Blog Alajami (Gatsby and Contentful)
 -> Création d'un Layout
 
 -> Choix d'un template pour le blog
+
+#09/10 
+
+-> Prise en main Tailwindcss (doc + tutoriel)
+-> Navbar Responsive Ok
