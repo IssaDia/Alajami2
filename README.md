@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
@@ -8,26 +9,27 @@
 <h1 align="center">
   Gatsby's hello-world starter
 </h1>
+=======
+Blog Alajami (Gatsby and Contentful)
+>>>>>>> 6c5562b3494e211c44eeec5e961c2e42ff8d5af4
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+#08/10
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+-> Veille techno sur la technologie à utiliser pour le blog Alajami
 
-## 🚀 Quick start
+-> Choix d'associer Gatsby et Contentful
 
-1.  **Create a Gatsby site.**
+-> Découverte et installation de Gatsby (via la documentation)
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+-> Découverte et installation de Tailwind CSS
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+-> Création d'un Layout
 
-1.  **Start developing.**
+-> Choix d'un template pour le blog
 
-    Navigate into your new site’s directory and start it up.
+#09/10 
 
+<<<<<<< HEAD
     ```shell
     cd my-hello-world-starter/
     gatsby develop
@@ -102,7 +104,9 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 # Alajami2
 Blog Alajami (Gatsby and Contentful)
 
-08/10
+Blog Alajami (Gatsby and Contentful)
+
+#08/10
 
 -> Veille techno sur la technologie à utiliser pour le blog Alajami
 
@@ -116,5 +120,13 @@ Blog Alajami (Gatsby and Contentful)
 
 -> Choix d'un template pour le blog
 
+#09/10
+
+-> Prise en main Tailwindcss (doc + tutoriel) -> Navbar Responsive Ok
+
 
 >>>>>>> 8a8fba8af1f9eec44e88b7ae38603f6c1951f31a
+=======
+-> Prise en main Tailwindcss (doc + tutoriel)
+-> Navbar Responsive Ok
+>>>>>>> 6c5562b3494e211c44eeec5e961c2e42ff8d5af4
