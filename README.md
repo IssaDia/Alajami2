@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
@@ -97,3 +98,23 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+=======
+# Alajami2
+Blog Alajami (Gatsby and Contentful)
+
+08/10
+
+-> Veille techno sur la technologie à utiliser pour le blog Alajami
+
+-> Choix d'associer Gatsby et Contentful
+
+-> Découverte et installation de Gatsby (via la documentation)
+
+-> Découverte et installation de Tailwind CSS
+
+-> Création d'un Layout
+
+-> Choix d'un template pour le blog
+
+
+>>>>>>> 8a8fba8af1f9eec44e88b7ae38603f6c1951f31a

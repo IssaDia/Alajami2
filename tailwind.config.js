@@ -6,7 +6,10 @@ module.exports = {
   purge: [],
   theme: {
     extend: {},
+    fontFamily: {
+      'noticia' : ['Noticia Text']
+    }
   },
   variants: {},
-  plugins: [],
+  plugins: []
 }
