@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'noticia' : ['Noticia Text']
+      'noticia' : ['Noticia Text'],
+      'serif': ['"PT serif"'],
     }
   },
   variants: {},

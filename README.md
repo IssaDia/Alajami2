@@ -1,6 +1,5 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
@@ -103,16 +102,10 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 <!-- AUTO-GENERATED-CONTENT:END -->
 =======
 # Alajami2
-Blog Alajami (Gatsby and Contentful)
 
 Blog Alajami (Gatsby and Contentful)
 
-=======
-# Alajami2
-Blog Alajami (Gatsby and Contentful)
-
->>>>>>> 5ec25359fcbf29e2f76515b43aebcd9b24471002
-#08/10
+##08/10
 
 -> Veille techno sur la technologie à utiliser pour le blog Alajami
 
@@ -126,10 +119,17 @@ Blog Alajami (Gatsby and Contentful)
 
 -> Choix d'un template pour le blog
 
-#09/10
+##09/10
 
-<<<<<<< HEAD
--> Prise en main Tailwindcss (doc + tutoriel) -> Navbar Responsive Ok
+-> Prise en main Tailwindcss (doc + tutoriel) 
+-> Navbar Responsive Ok
+
+##10/10
+
+-> Jumbotron Ok
+-> Découverte librairie React-slick pour Carousel
+->Carousel Ok
+
 
 
 >>>>>>> 8a8fba8af1f9eec44e88b7ae38603f6c1951f31a
@@ -137,7 +137,3 @@ Blog Alajami (Gatsby and Contentful)
 -> Prise en main Tailwindcss (doc + tutoriel)
 -> Navbar Responsive Ok
 >>>>>>> 6c5562b3494e211c44eeec5e961c2e42ff8d5af4
-=======
--> Prise en main Tailwindcss (doc + tutoriel) 
--> Navbar Responsive Ok
->>>>>>> 5ec25359fcbf29e2f76515b43aebcd9b24471002
