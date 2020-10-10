@@ -17,26 +17,22 @@ export default function Carousel () {
     }
   ]
   const settings = {
-    dots: true,
     infinite: true,
-    speed: 800
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1
   }
   return (
-    <div className='flex flex flex-row'>
-      <div className=''>
-        <Slider {...settings}>
-          {photos.map((photo, index) => {
-            return (
-              <div key={index}>
-                <img className='w-full h-64' src={photo.url} />
-              </div>
-            )
-          })}
-        </Slider>
-      </div>
-      <div className='w-4/12 h-auto mx-6'>
-    1
-      </div>
-    </div>
+    <>
+      <Slider {...settings}>
+        {photos.map((photo, index) => {
+          return (
+            <div key={index} className='w-full h-full m-0'>
+              <img src={photo.url} />
+            </div>
+          )
+        })}
+      </Slider>
+    </>
   )
 }
