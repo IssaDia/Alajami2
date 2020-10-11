@@ -1,14 +1,13 @@
 import React from 'react'
-import Wrapper from '../components/wrapper'
 import Header from '../components/header'
 import Jumbotron from './jumbotron'
 
 export default function Layout ({ children }) {
   return (
-    <Wrapper>
+    <div className='container mx-auto font bg-white'>
       <Header />
       <Jumbotron />
       {children}
-    </Wrapper>
+    </div>
   )
 }

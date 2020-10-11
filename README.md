@@ -1,19 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's hello-world starter
-</h1>
-=======
-Blog Alajami (Gatsby and Contentful)
->>>>>>> 6c5562b3494e211c44eeec5e961c2e42ff8d5af4
 
-#08/10
+Blog Alajami (Gatsby and Contentful)
+
+## 08/10
 
 -> Veille techno sur la technologie à utiliser pour le blog Alajami
 
@@ -27,113 +15,41 @@ Blog Alajami (Gatsby and Contentful)
 
 -> Choix d'un template pour le blog
 
-#09/10 
-
-<<<<<<< HEAD
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
-
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
-=======
-# Alajami2
-
-Blog Alajami (Gatsby and Contentful)
-
-##08/10
-
--> Veille techno sur la technologie à utiliser pour le blog Alajami
-
--> Choix d'associer Gatsby et Contentful
-
--> Découverte et installation de Gatsby (via la documentation)
-
--> Découverte et installation de Tailwind CSS
-
--> Création d'un Layout
-
--> Choix d'un template pour le blog
-
-##09/10
+## 09/10
 
 -> Prise en main Tailwindcss (doc + tutoriel) 
+
 -> Navbar Responsive Ok
 
-##10/10
+## 10/10
 
 -> Jumbotron Ok
+
 -> Découverte librairie React-slick pour Carousel
+
 ->Carousel Ok
 
+## 11/10
 
+->création d'un container pour différentes box
 
->>>>>>> 8a8fba8af1f9eec44e88b7ae38603f6c1951f31a
-=======
--> Prise en main Tailwindcss (doc + tutoriel)
--> Navbar Responsive Ok
->>>>>>> 6c5562b3494e211c44eeec5e961c2e42ff8d5af4
+->Recherche sur la performance de rapidité d'affichage d'une image sur Gratsby (tutoriel Youtube)
+
+-> Choix et installation de Gatsby-image
+
+issue : 
+Error in "/opt/lampp/htdocs/gatsby/alajami/node_modules/gatsby-plugin-sharp/gatsby-node.js":
+Something went wrong installing the "sharp" module
+Cannot find module '../build/Release/sharp.node'
+
+solved : 
+
+here steps to resolve this issue (via Github):
+
+Delete node_modules folder
+Clear npm cache npm cache clean --force
+(Optional) upgrade npm packages npm install npm@latest -g
+Re-install packages by running `npm install'
+Try again to run gatsby develop on your terminal/cmd. Good luck and happy coding again
+
+->Affichage d'une image responsive
