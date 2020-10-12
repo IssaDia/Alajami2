@@ -11,7 +11,7 @@ export default function Home () {
           <Carousel />
         </div>
         <div className='w-4/12 px-4'>
-          <BoxContentBio title='About Me' />
+          <BoxContentBio title='A propos de moi' />
         </div>
       </div>
     </Layout>

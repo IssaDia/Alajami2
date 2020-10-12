@@ -27,13 +27,13 @@ Blog Alajami (Gatsby and Contentful)
 
 -> Découverte librairie React-slick pour Carousel
 
-->Carousel Ok
+-> Carousel Ok
 
 ## 11/10
 
-->création d'un container pour différentes box
+-> Création d'un container pour différentes box
 
-->Recherche sur la performance de rapidité d'affichage d'une image sur Gratsby (tutoriel Youtube)
+-> Recherche sur la performance de rapidité d'affichage d'une image sur Gratsby (tutoriel Youtube)
 
 -> Choix et installation de Gatsby-image
 
@@ -53,3 +53,17 @@ Re-install packages by running `npm install'
 Try again to run gatsby develop on your terminal/cmd. Good luck and happy coding again
 
 ->Affichage d'une image responsive
+
+## 12/10 
+
+-> Découverte Contentful (doc)
+
+-> Intégration de Contenful au projet (configuration + login avec Api Keys)
+
+-> Paramétrage des content model à partir de l'interface Contenful (profil créateur, articles)
+
+-> Début entrées données relatives au blog
+
+-> Utilisation de l'API Contentful pour créer une requete GraphQl
+
+-> Intégration d'une 1ére requête GraphQl sur l'application Gatsby
