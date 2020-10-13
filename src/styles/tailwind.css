@@ -3,3 +3,14 @@
 @tailwind components;
 
 @tailwind utilities;
+
+
+.slick-slide {
+    height:400px;
+    width: 100%;
+ }
+ 
+ .slick-slide img {
+    height:400px;
+    width: 100%;
+ }

@@ -67,3 +67,9 @@ Try again to run gatsby develop on your terminal/cmd. Good luck and happy coding
 -> Utilisation de l'API Contentful pour créer une requete GraphQl
 
 -> Intégration d'une 1ére requête GraphQl sur l'application Gatsby
+
+-> Découverte de ResponsiveApp qui permet d'afficher un visuel de son application sur différents appareils
+
+## 13/10
+
+-> Travail sur le Grid de l'application via Tailwind Css
