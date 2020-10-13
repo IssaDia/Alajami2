@@ -37,20 +37,20 @@ Blog Alajami (Gatsby and Contentful)
 
 -> Choix et installation de Gatsby-image
 
-issue : 
-Error in "/opt/lampp/htdocs/gatsby/alajami/node_modules/gatsby-plugin-sharp/gatsby-node.js":
-Something went wrong installing the "sharp" module
-Cannot find module '../build/Release/sharp.node'
+    issue : 
+    Error in "/opt/lampp/htdocs/gatsby/alajami/node_modules/gatsby-plugin-sharp/gatsby-node.js":
+    Something went wrong installing the "sharp" module
+    Cannot find module '../build/Release/sharp.node'
 
-solved : 
+    solved : 
 
-here steps to resolve this issue (via Github):
+    here steps to resolve this issue (via Github):
 
-Delete node_modules folder
-Clear npm cache npm cache clean --force
-(Optional) upgrade npm packages npm install npm@latest -g
-Re-install packages by running `npm install'
-Try again to run gatsby develop on your terminal/cmd. Good luck and happy coding again
+    Delete node_modules folder
+    Clear npm cache npm cache clean --force
+    (Optional) upgrade npm packages npm install npm@latest -g
+    Re-install packages by running `npm install'
+    Try again to run gatsby develop on your terminal/cmd. Good luck and happy coding again
 
 ->Affichage d'une image responsive
 
@@ -73,3 +73,11 @@ Try again to run gatsby develop on your terminal/cmd. Good luck and happy coding
 ## 13/10
 
 -> Travail sur le Grid de l'application via Tailwind Css
+
+-> Récupération d'un texte en markdown et le convertir en Html par le biais d'un parser 
+
+-> Installation d'un parser : choix de Marked
+
+    issue ; TypeError: Object(...) is not a function
+
+    resolved : mettr marked au lieu de { marked } quand je fais l'import de la librairie (via stackoverflwow)
