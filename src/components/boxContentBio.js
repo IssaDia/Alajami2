@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 export default function BoxContentBio () {
   const data = useStaticQuery(graphql`
-  query MyQuery {
+  query getCreatorInfo {
     contentfulBlogCreator {
       nom
       titre

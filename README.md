@@ -81,3 +81,15 @@ Blog Alajami (Gatsby and Contentful)
     issue ; TypeError: Object(...) is not a function
 
     resolved : mettr marked au lieu de { marked } quand je fais l'import de la librairie (via stackoverflwow)
+
+## 14/10
+
+-> Recherche sur les relations entre les différentes collections (doc Contentful)
+
+    remarque : toujours faire  le modéle des données en amont même si le NoSql permet une plus grande liberté de modulation
+    
+-> Création d'articles et de leurs catégories via la plateforme Contenful
+
+-> Affichage de Crads avec les différents thémes d'articles
+
+-> Création de routes dynamiques (doc Gatsby)
