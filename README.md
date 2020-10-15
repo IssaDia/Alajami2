@@ -93,3 +93,17 @@ Blog Alajami (Gatsby and Contentful)
 -> Affichage de Crads avec les différents thémes d'articles
 
 -> Création de routes dynamiques (doc Gatsby)
+
+## 15/10
+
+-> Créer un fichier .env avec mes paramétres de connexion à Contentful (avec la librairie DotEnv)
+
+    remarque : y penser au démarrage du projet
+
+-> A considérer : rich text contenful plugin
+
+-> Requête pour récupérer tous les articles d'un même théme 
+
+    issue : Variable "$slug" of required type "String!" was not provided
+
+    resolved : StaticQuery n'est pas geré avec des arguments dans Gatsby

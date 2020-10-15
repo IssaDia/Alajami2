@@ -1,8 +1,6 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
+const dotenv = require('dotenv')
+
+if (process.env.NODE_ENV !== 'production') dotenv.config()
 
 module.exports = {
   /* Your site config here */
@@ -11,7 +9,7 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `pemf7z9toffw`,
-        accessToken: `4Lm1VvTeFw9hGNOrSSBTn88vzQiqhBJ-dJycPredL08`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         downloadLocal: true,
       }
     },

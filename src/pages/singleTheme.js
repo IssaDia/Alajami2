@@ -1,29 +1,27 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 export default function SingleTheme () {
-    const data = useStaticQuery(graphql`
-    query getCreatorInfo($slug: String!) {
-      contentfulBlogCreator {
-        nom
-        titre
-        image {
-          fluid {
-            ...GatsbyContentfulFluid
+  const data = graphql`
+    query ($slug: String!) {
+        allContentfulBlogPost(filter: {postCategory: {slug: {eq: $slug}}}) {
+            edges {
+              node {
+                title
+                body {
+                  body
+                }
+              }
+            }
           }
-          file {
-            url
-          }
-        }
-      }
-      contentfulBlogCreatorBioTextNode {
-        bio
-      }
     }
-  `)
+  `
+  const themedCards = data.allContentfulBlogPost.edges.map(({ node }) => {
+    return <h1 key={node.title}>{node.title}</h1>
+  })
   return (
-    <div>
-      <h1>HELLO wORLD</h1>
+    <div className='h-64 flex flex-row px-16 mx-4'>
+      {themedCards}
     </div>
   )
 }
