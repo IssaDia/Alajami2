@@ -107,3 +107,7 @@ Blog Alajami (Gatsby and Contentful)
     issue : Variable "$slug" of required type "String!" was not provided
 
     resolved : StaticQuery n'est pas geré avec des arguments dans Gatsby
+
+    issue 2 : still Variable "$slug" of required type "String!" was not provided
+
+    resolved : placer le composant requis dans template et non dans pages pour que le contexte ( le sug ici) puisse être passé dans context
