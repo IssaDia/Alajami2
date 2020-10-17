@@ -16,11 +16,11 @@ export default function ThemeListContainer () {
   }
   `)
 
-  const themedCards = data.allContentfulBlogCategories.edges.map(({ node }) => {
-    return <div className='px-4 py-2 m-2' key={node.title}><ThemeCard title={node.title} slug={node.slug}>{node.title}</ThemeCard></div>
+  const themedCards = data.allContentfulBlogCategories.edges.map(({ node, index }) => {
+    return <ThemeCard key={node.title} title={node.title} slug={node.slug}>{node.title}</ThemeCard>
   })
   return (
-    <div className='h-64 flex flex-row px-16 mx-4'>
+    <div className='flex flex-wrap -mx-1 lg:-mx-4'>
       {themedCards}
     </div>
   )

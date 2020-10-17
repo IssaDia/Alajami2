@@ -1,9 +1,9 @@
 import React from 'react'
-import Box from '../components/box'
+import Box from './box'
 import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 
-export default function BoxContentBio () {
+export default function BioWidget () {
   const data = useStaticQuery(graphql`
   query getCreatorInfo {
     contentfulBlogCreator {

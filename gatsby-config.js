@@ -4,13 +4,13 @@ if (process.env.NODE_ENV !== 'production') dotenv.config()
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-postcss`, `gatsby-plugin-sharp`, `gatsby-transformer-sharp`,
+  plugins: [`gatsby-plugin-postcss`, `gatsby-plugin-sharp`, `gatsby-transformer-sharp`,`@contentful/gatsby-transformer-contentful-richtext`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `pemf7z9toffw`,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-        downloadLocal: true,
+        downloadLocal: true
       }
     },
     {

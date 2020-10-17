@@ -1,6 +1,8 @@
 
 Blog Alajami (Gatsby and Contentful)
 
+A faire : pages next,previous sur chaque article, améliorer markdown, utiliser plugin Gatsbt pour les extraits de texte
+
 ## 08/10
 
 -> Veille techno sur la technologie à utiliser pour le blog Alajami
@@ -111,3 +113,11 @@ Blog Alajami (Gatsby and Contentful)
     issue 2 : still Variable "$slug" of required type "String!" was not provided
 
     resolved : placer le composant requis dans template et non dans pages pour que le contexte ( le sug ici) puisse être passé dans context
+
+## 17/10
+
+-> Construction de la query permettant de récupérer les derniers articles pour le widget de la page d'accueil
+
+-> Utilisation d'un plugin Contentful pour transformer Rich Text en Html
+
+-> Réorganisation du layout
