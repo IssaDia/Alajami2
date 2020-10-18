@@ -16,8 +16,8 @@ export default function BioWidget () {
   }
 `)
 
-  const lastsPosts = data.allContentfulBlogPost.edges.map(({ node, index }) => {
-    return <h3 className='text-xs' key={index}> {node.title}</h3>
+  const lastsPosts = data.allContentfulBlogPost.edges.map(({ node }) => {
+    return <h3 className='text-xs' key={node.title}> {node.title}</h3>
   })
 
   return (

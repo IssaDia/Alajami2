@@ -40,9 +40,9 @@ export default function Layout ({ children }) {
         <div className='w-full lg:w-1/4 px-4'>
           <BioWidget />
         </div>
-        <div className='flex flex-wrap mt-8 mb-8 lg:max-h-xs'>
-          {children}
-        </div>
+      </div>
+      <div className='flex flex-wrap mt-8 mb-8 lg:max-h-xs'>
+        {children}
       </div>
     </div>
   )

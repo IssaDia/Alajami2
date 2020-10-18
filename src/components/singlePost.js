@@ -3,7 +3,6 @@ import Box from './box'
 import marked from 'marked'
 
 export default function SinglePost ({ title, content }) {
-  console.log(content)
   return (
     <Box title={title}>
       <div>

@@ -121,3 +121,8 @@ A faire : pages next,previous sur chaque article, améliorer markdown, utiliser 
 -> Utilisation d'un plugin Contentful pour transformer Rich Text en Html
 
 -> Réorganisation du layout
+
+
+## 18/10
+
+-> Pagination pour la liste des différents thémes du blog ( via documentation)
