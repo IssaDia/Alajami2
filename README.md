@@ -125,4 +125,14 @@ A faire : pages next,previous sur chaque article, améliorer markdown, utiliser 
 
 ## 18/10
 
--> Pagination pour la liste des différents thémes du blog ( via documentation)
+-> Pagination pour la liste des différents thémes du blog ( via documentation
+
+## 19/10
+
+  issue : e GraphQL query in the non-page component "/opt/lampp/htdocs/gatsby/alajami/src/templates/themeTemplate.js" will not be run.
+
+  resolved : mettre les creations de page dans une seule et même fonction
+
+-> Installation du plugin Catch Links de Gatsby pour permettre de ne pas recharger les pages externes
+
+-> Récupération des données des articles dont le titre et un extrait (par l'utilisation du plugin gatsby-transformer-remark)

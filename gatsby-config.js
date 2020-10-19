@@ -4,7 +4,7 @@ if (process.env.NODE_ENV !== 'production') dotenv.config()
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-postcss`, `gatsby-plugin-sharp`, `gatsby-transformer-sharp`,`@contentful/gatsby-transformer-contentful-richtext`,
+  plugins: [`gatsby-plugin-postcss`, `gatsby-plugin-sharp`, `gatsby-transformer-sharp`,`@contentful/gatsby-transformer-contentful-richtext`,`gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -16,8 +16,23 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
-        path: `${__dirname}/src/images/`
+        path: `${__dirname}/src/pages`,
+        name: 'pages'
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // CommonMark mode (default: true)
+        commonmark: true,
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // Pedantic mode (default: true)
+        pedantic: true,
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: []
       }
     }]
 }

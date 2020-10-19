@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-export default function ThemeCard ({ title, slug }) {
+export default function ThemesCard ({ title, slug }) {
   return (
     <div className='my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3'>
       <Link to={slug}>

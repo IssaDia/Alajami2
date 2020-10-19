@@ -2,16 +2,24 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Box from '../components/box'
+import LastsPostsWidget from '../components/lastsPostsWidget'
+import SingleThemeCard from '../components/single-theme-card'
 
 export default function ThemeTemplate ({ data }) {
-  const themeCards = data.allContentfulBlogPost.edges.map(({ node }) => {
-    return <h1 key={node.title}>{node.title}</h1>
+  const singleThemeData = data.allContentfulBlogPost.edges.map(({ node }) => {
+    return <SingleThemeCard key={node.title} title={node.title} theme={data.contentfulBlogCategories.title} content={node.body.childMarkdownRemark.excerpt} />
   })
+
   return (
     <Layout>
-      <Box title='Themes'>
-        <div className='h-64 flex flex-row px-16 mx-4'>{themeCards}</div>
-      </Box>
+      <div className='w-full lg:w-3/4 lg:px-4 sm:h-42 lg:max-h-xs lg:m-0 mt-8'>
+        <Box title={data.contentfulBlogCategories.title}>
+          <div className='h-64 flex flex-row px-16 mx-4'>{singleThemeData}</div>
+        </Box>
+      </div>
+      <div className='w-full lg:w-1/4 px-4'>
+        <LastsPostsWidget />
+      </div>
     </Layout>
   )
 }
@@ -23,10 +31,15 @@ query ($slug: String!) {
           node {
             title
             body {
-              body
+              childMarkdownRemark {
+                excerpt
+              }
             }
           }
         }
       }
+    contentfulBlogCategories(slug: {eq: $slug}) {
+      title
+    }
 }
 `
