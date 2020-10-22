@@ -136,3 +136,8 @@ A faire : pages next,previous sur chaque article, améliorer markdown, utiliser 
 -> Installation du plugin Catch Links de Gatsby pour permettre de ne pas recharger les pages externes
 
 -> Récupération des données des articles dont le titre et un extrait (par l'utilisation du plugin gatsby-transformer-remark)
+
+## 22/10
+
+-> Amélioration Css Cards
+

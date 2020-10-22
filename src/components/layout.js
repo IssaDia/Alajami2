@@ -30,14 +30,14 @@ export default function Layout ({ children }) {
       <Header />
       <Jumbotron />
       <div className='flex flex-wrap mt-8 mb-8 lg:max-h-xs'>
-        <div className='w-full lg:w-3/4 lg:px-4 sm:h-42 lg:max-h-xs lg:m-0  mt-8'>
+        <div className='w-full lg:w-3/4 lg:px-4 sm:h-42 lg:max-h-xs lg:m-0  mt-8 animate__animated animate__fadeInLeft'>
           <Img
             fluid={data.contentfulAlbumCollection.image.fluid}
             alt="Photo du Coran  de la page d'accueil du blog Alajami"
             className='w-full h-full object-cover'
           />
         </div>
-        <div className='w-full lg:w-1/4 px-4'>
+        <div className='w-full lg:w-1/4 px-4 animate__animated animate__fadeInRight'>
           <BioWidget />
         </div>
       </div>

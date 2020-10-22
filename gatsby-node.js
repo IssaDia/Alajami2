@@ -5,12 +5,23 @@ const { createFilePath } = require('gatsby-source-filesystem')
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const themeTemplate = path.resolve('./src/templates/themeTemplate.js')
+  const postTemplate = path.resolve('./src/templates/single-post-template.js')
   const { data } = await graphql(`
   query  {
     allContentfulBlogCategories {
       edges {
         node {
           slug
+        }
+      }
+    }
+    allContentfulBlogPost {
+      edges {
+        node {
+          slug
+          postCategory {
+            slug
+          }
         }
       }
     }
@@ -22,6 +33,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     createPage({
       path: '/themes/' + slug,
       component: themeTemplate,
+      context: { slug: slug }
+    })
+  })
+
+  data.allContentfulBlogPost.edges.forEach(edge => {
+    const slug = edge.node.slug
+    const categorySlug = edge.node.postCategory.slug
+    createPage({
+      path: '/themes/' + categorySlug + '/' + slug,
+      component: postTemplate,
       context: { slug: slug }
     })
   })
@@ -54,7 +75,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const numPages = Math.ceil(posts.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
-      path: i === 0 ? '/themes' : `/themes/page${i + 1}`,
+      path: i === 0 ? '/themes' : `/themes/${i + 1}`,
       component: path.resolve('./src/templates/themesTemplate.js'),
       context: {
         limit: postsPerPage,

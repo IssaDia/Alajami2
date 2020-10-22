@@ -1,6 +1,6 @@
 import React from 'react'
 import Box from './box'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 
 export default function BioWidget () {
   const data = useStaticQuery(graphql`
@@ -17,14 +17,14 @@ export default function BioWidget () {
 `)
 
   const lastsPosts = data.allContentfulBlogPost.edges.map(({ node }) => {
-    return <h3 className='text-xs' key={node.title}> {node.title}</h3>
+    return <Link to={node.slug} key={node.title}><li className='text-xs'>{node.title}</li></Link>
   })
 
   return (
     <Box title='Articles Récents'>
-      <div className='flex flex-col items-center space-y-6'>
+      <ul className='flex flex-col items-center space-y-6 list-disc'>
         {lastsPosts}
-      </div>
+      </ul>
     </Box>
   )
 }

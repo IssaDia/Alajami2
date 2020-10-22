@@ -22,6 +22,7 @@ module.exports = {
     fontFamily: {
       'noticia' : ['Noticia Text'],
       'serif': ['"PT serif"'],
+      'playfair': ['"Playfair Display serif"']
     }
   },
   variants: {},

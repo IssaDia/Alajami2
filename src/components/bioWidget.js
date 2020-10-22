@@ -25,7 +25,7 @@ export default function BioWidget () {
 `)
 
   return (
-    <Box title='About Me'>
+    <Box title='A PROPOS DE MOI'>
       <div className='flex flex-col items-center space-y-6'>
         <Img
           fluid={data.contentfulBlogCreator.image.fluid}
