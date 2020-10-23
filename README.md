@@ -1,7 +1,7 @@
 
 Blog Alajami (Gatsby and Contentful)
 
-A faire : pages next,previous sur chaque article, améliorer markdown, utiliser plugin Gatsbt pour les extraits de texte
+A faire : pages next,previous sur chaque article
 
 ## 08/10
 
@@ -143,7 +143,7 @@ A faire : pages next,previous sur chaque article, améliorer markdown, utiliser 
 
 ## 23/10
 
--> Mise en place du footer
+-> Création du footer
 
 -> Utilisation d'un Wrapped Component pour avoir accés aux derniers posts dans un widget et dans le footer
 

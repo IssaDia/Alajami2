@@ -19,7 +19,7 @@ export default function ThemesTemplate ({ data, pageContext }) {
   )
   return (
     <Layout>
-      <div className='w-full lg:w-3/4 lg:px-4 sm:h-42 lg:max-h-xs lg:m-0 mt-8'>
+      <div className='w-full lg:w-3/4 lg:px-4 sm:h-42 lg:m-0 mt-8'>
         <Box title='Themes'>
           <div className='grid grid-rows-3 grid-flow-col gap-4 mt-16'>
             {themesData}

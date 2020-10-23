@@ -10,7 +10,7 @@ export default function SingleThemeCard ({ title, theme, content, slug }) {
         <span> / </span>
       </div>
       <p className='text-gray-900'>{content}</p>
-      <Link to={slug}><p className='float-right text-yellow-500'>Continuer à lire</p></Link>
+      <Link to={slug}><p className='float-right text-yellow-500'>Continuer à lire</p><span className='text-yellow-500'>→</span></Link>
     </div>
   )
 }

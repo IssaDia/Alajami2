@@ -30,7 +30,7 @@ export const LastPosts = getLastPosts(props => (
 
 export const LastPostsFooter = getLastPosts(props => (
   props.lastsPosts.allContentfulBlogPost.edges.map(({ node }) => {
-    return <Link to={node.slug} key={node.title}><li className='text-xl'>{node.title}</li></Link>
+    return <Link to={node.slug} key={node.title}><li className='text-xs text-gray-800 hover:text-white'>{node.title}</li></Link>
   })
 )
 )

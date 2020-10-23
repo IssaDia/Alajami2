@@ -12,7 +12,7 @@ export default function ThemeTemplate ({ data }) {
 
   return (
     <Layout>
-      <div className='w-full lg:w-3/4 lg:px-4 sm:h-42 lg:max-h-xs lg:m-0 mt-8'>
+      <div className='w-full lg:w-3/4 lg:px-4 sm:h-42 lg:m-0 mt-8'>
         <Box title={data.contentfulBlogCategories.title}>
           <div className='h-64 flex flex-row px-8'>{singleThemeData}</div>
         </Box>

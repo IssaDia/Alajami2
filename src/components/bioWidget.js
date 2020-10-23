@@ -8,7 +8,9 @@ export default function BioWidget () {
       <div className='flex flex-col items-center space-y-6'>
         <BioImage />
         <BioTitle />
-        <BioDescription />
+        <div className='text-xs text-gray-800 px-8 italic text-center'>
+          <BioDescription />
+        </div>
       </div>
     </Box>
   )

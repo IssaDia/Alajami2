@@ -39,6 +39,6 @@ export const BioImage = getBio(props => (
 )
 
 export const BioDescription = getBio(props => (
-  <p className='text-xs text-gray-800 px-8 italic text-center pb-6'>{props.bio.contentfulBlogCreatorBioTextNode.bio}</p>
+  <p className=''>{props.bio.contentfulBlogCreatorBioTextNode.bio}</p>
 )
 )

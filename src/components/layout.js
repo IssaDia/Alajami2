@@ -28,7 +28,7 @@ export default function Layout ({ children }) {
 `)
   return (
     <>
-      <div className='container mx-auto flex flex-col min-h-screen'>
+      <div className='container-fluid mx-auto flex flex-col min-h-screen'>
         <Header />
         <main className='flex-1'>
           <Jumbotron />
