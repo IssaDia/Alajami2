@@ -141,3 +141,9 @@ A faire : pages next,previous sur chaque article, améliorer markdown, utiliser 
 
 -> Amélioration Css Cards
 
+## 23/10
+
+-> Mise en place du footer
+
+-> Utilisation d'un Wrapped Component pour avoir accés aux derniers posts dans un widget et dans le footer
+
