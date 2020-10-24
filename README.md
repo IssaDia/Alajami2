@@ -147,3 +147,11 @@ A faire : pages next,previous sur chaque article
 
 -> Utilisation d'un Wrapped Component pour avoir accés aux derniers posts dans un widget et dans le footer
 
+## 24/10
+
+-> Travail sur l'adaptation d'un script permettant de récupérer des données à partir de l'api Wordpress
+
+    issue : error 403 Acess denied
+
+    not solved
+

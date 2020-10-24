@@ -18,6 +18,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     allContentfulBlogPost {
       edges {
         node {
+          title
           slug
           postCategory {
             slug
@@ -37,13 +38,26 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   })
 
-  data.allContentfulBlogPost.edges.forEach(edge => {
-    const slug = edge.node.slug
-    const categorySlug = edge.node.postCategory.slug
+  const posts = data.allContentfulBlogPost.edges
+
+  posts.forEach(({ node }, index) => {
+    const slug = node.slug
+    const title = node.title
+    const prev = index === 0 ? null : posts[index - 1].node
+    const next = index === (posts.length - 1) ? null : posts[index + 1].node
+    const test = posts[index]
+    console.log(prev)
+    const categorySlug = node.postCategory.slug
     createPage({
       path: '/themes/' + categorySlug + '/' + slug,
       component: postTemplate,
-      context: { slug: slug }
+      context: {
+        slug,
+        title,
+        test,
+        prev,
+        next
+      }
     })
   })
 
@@ -70,9 +84,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // ...
 
   // Create blog-list pages
-  const posts = result.data.allContentfulBlogCategories.edges
+  const postsData = result.data.allContentfulBlogCategories.edges
   const postsPerPage = 6
-  const numPages = Math.ceil(posts.length / postsPerPage)
+  const numPages = Math.ceil(postsData.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
       path: i === 0 ? '/themes' : `/themes/${i + 1}`,

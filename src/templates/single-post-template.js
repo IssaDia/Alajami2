@@ -5,7 +5,8 @@ import SinglePost from '../components/singlePost'
 import LastsPostsWidget from '../components/lastsPostsWidget'
 import { graphql } from 'gatsby'
 
-export default function SinglePostTemplate ({ data }) {
+export default function SinglePostTemplate ({ data, pageContext }) {
+  console.log(pageContext)
   return (
     <Layout>
       <div className='w-full lg:w-3/4 lg:px-4 sm:h-42 lg:m-0  mt-8'>
