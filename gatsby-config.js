@@ -4,7 +4,7 @@ if (process.env.NODE_ENV !== 'production') dotenv.config()
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-postcss`, `gatsby-plugin-sharp`, `gatsby-transformer-sharp`,`@contentful/gatsby-transformer-contentful-richtext`,`gatsby-plugin-catch-links`,
+  plugins: [`gatsby-plugin-postcss`, `gatsby-plugin-sharp`, `gatsby-transformer-sharp`,`@contentful/gatsby-transformer-contentful-richtext`,`gatsby-plugin-catch-links`,`gatsby-plugin-fontawesome-css`,
     {
       resolve: `gatsby-source-contentful`,
       options: {

@@ -7,3 +7,30 @@
 main {
   flex: 1 0 auto;
 }
+
+.arrow-link-container {
+  transition: all 0.1s ease-in-out, transform .2s;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.arrow-link-container:hover {
+  transform: scale(1.15);
+}
+
+.arrow-link-container:hover .arrow-link-text {
+
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+
+}
+
+.arrow-link-text {
+  margin-left: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+  font-size: 10px;
+}
