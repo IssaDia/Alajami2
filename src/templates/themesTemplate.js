@@ -7,8 +7,8 @@ import LastsPostsWidget from '../components/lastsPostsWidget'
 import Pagination from '../components/pagination'
 
 export default function ThemesTemplate ({ data, pageContext }) {
-  console.log(pageContext)
-  const { currentPage, numPages } = pageContext
+  console.log(data)
+  const { previousPagePath, nextPagePath } = pageContext
   const themesData = data.allContentfulBlogCategories.edges.map(
     ({ node }) => {
       return (
@@ -25,7 +25,7 @@ export default function ThemesTemplate ({ data, pageContext }) {
           <div className='grid grid-rows-3 grid-flow-col gap-4 mt-16'>
             {themesData}
           </div>
-          <Pagination currentPage={currentPage} numPages={numPages} />
+          <Pagination previousPagePath={previousPagePath} nextPagePath={nextPagePath} />
         </Box>
       </div>
       <div className='w-full lg:w-1/4 px-4'>

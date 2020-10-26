@@ -1,9 +1,9 @@
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const { paginate } = require('gatsby-awesome-pagination')
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
-  const themeTemplate = path.resolve('./src/templates/themeTemplate.js')
   const postTemplate = path.resolve('./src/templates/single-post-template.js')
   const { data } = await graphql(`
   query  {
@@ -28,16 +28,36 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 `)
 
-  data.allContentfulBlogCategories.edges.forEach(edge => {
+  if (data.errors) {
+    reporter.panicOnBuild('Error while running GraphQL query.')
+    return
+  }
+
+  const categories = data.allContentfulBlogCategories.edges
+  const posts = data.allContentfulBlogPost.edges
+
+  categories.forEach(edge => {
     const slug = edge.node.slug
-    createPage({
-      path: '/themes/' + slug,
-      component: themeTemplate,
-      context: { slug: slug }
+    paginate({
+      createPage,
+      items: posts,
+      itemsPerPage: 2,
+      pathPrefix: '/articles/' + slug,
+      component: path.resolve('./src/templates/themeTemplate.js'),
+      context: {
+        slug
+        // other stuff
+      }
     })
   })
 
-  const posts = data.allContentfulBlogPost.edges
+  paginate({
+    createPage,
+    items: categories,
+    itemsPerPage: 6,
+    pathPrefix: '/themes',
+    component: path.resolve('./src/templates/themesTemplate.js')
+  })
 
   posts.forEach(({ node }, index) => {
     const slug = node.slug
@@ -56,45 +76,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         test,
         prev,
         next
-      }
-    })
-  })
-
-  const result = await graphql(
-    `
-      {
-        allContentfulBlogCategories {
-          edges {
-            node {
-              title
-              slug
-            }
-          }
-        }
-      }
-    `
-  )
-
-  if (result.errors) {
-    reporter.panicOnBuild('Error while running GraphQL query.')
-    return
-  }
-
-  // ...
-
-  // Create blog-list pages
-  const postsData = result.data.allContentfulBlogCategories.edges
-  const postsPerPage = 6
-  const numPages = Math.ceil(postsData.length / postsPerPage)
-  Array.from({ length: numPages }).forEach((_, i) => {
-    createPage({
-      path: i === 0 ? '/themes' : `/themes/${i + 1}`,
-      component: path.resolve('./src/templates/themesTemplate.js'),
-      context: {
-        limit: postsPerPage,
-        skip: i * postsPerPage,
-        numPages,
-        currentPage: i + 1
       }
     })
   })
