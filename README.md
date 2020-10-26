@@ -112,7 +112,7 @@ A faire : pages next,previous sur chaque article
 
     issue 2 : still Variable "$slug" of required type "String!" was not provided
 
-    resolved : placer le composant requis dans template et non dans pages pour que le contexte ( le sug ici) puisse être passé dans context
+    resolved : placer le composant requis dans template et non dans pages pour que le contexte ( le slug ici) puisse être passé dans context
 
 ## 17/10
 
@@ -154,4 +154,11 @@ A faire : pages next,previous sur chaque article
     issue : error 403 Acess denied
 
     not solved
+
+## 25/10
+
+-> Travail sur le css des Cards des différents articles
+
+-> Travail sur la pagination des pages d'articles (non résolu)
+
 

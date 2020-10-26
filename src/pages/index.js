@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import SinglePost from '../components/singlePost'
+import IntroductionPost from '../components/IntroductionPost'
 import LastsPostsWidget from '../components/lastsPostsWidget'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -21,7 +21,7 @@ export default function Home () {
   return (
     <Layout>
       <div className='w-full lg:w-3/4 lg:px-4 lg:m-0  mt-8'>
-        <SinglePost title={data.contentfulBlogIntroduction.title} content={data.contentfulBlogIntroduction.text.childContentfulRichText.html} />
+        <IntroductionPost title={data.contentfulBlogIntroduction.title} content={data.contentfulBlogIntroduction.text.childContentfulRichText.html} />
       </div>
       <div className='w-full lg:w-1/4 px-4'>
         <LastsPostsWidget />

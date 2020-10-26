@@ -12,9 +12,9 @@ export default function ThemeTemplate ({ data }) {
 
   return (
     <Layout>
-      <div className='w-full lg:w-3/4 lg:px-4 sm:h-42 lg:m-0 mt-8'>
+      <div className='w-full lg:w-3/4 lg:px-4 sm:h-42 lg:m-0 m-8 '>
         <Box title={data.contentfulBlogCategories.title}>
-          <div className='h-64 flex flex-row px-8'>{singleThemeData}</div>
+          <div className='grid grid-cols-2 gap-4 p-16'>{singleThemeData}</div>
         </Box>
       </div>
       <div className='w-full lg:w-1/4 px-4'>
@@ -26,21 +26,21 @@ export default function ThemeTemplate ({ data }) {
 
 export const data = graphql`
 query ($slug: String!) {
-    allContentfulBlogPost(filter: {postCategory: {slug: {eq: $slug}}}) {
-        edges {
-          node {
-            title
-            slug
-            body {
-              childMarkdownRemark {
-                excerpt
-              }
-            }
+  allContentfulBlogPost(filter: {postCategory: {slug: {eq: $slug}}}) {
+    edges {
+      node {
+        title
+        slug
+        body {
+          childMarkdownRemark {
+            excerpt
           }
         }
       }
-    contentfulBlogCategories(slug: {eq: $slug}) {
-      title
     }
+  }
+contentfulBlogCategories(slug: {eq: $slug}) {
+  title
+}
 }
 `

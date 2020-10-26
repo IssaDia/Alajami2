@@ -7,6 +7,7 @@ import LastsPostsWidget from '../components/lastsPostsWidget'
 import Pagination from '../components/pagination'
 
 export default function ThemesTemplate ({ data, pageContext }) {
+  console.log(pageContext)
   const { currentPage, numPages } = pageContext
   const themesData = data.allContentfulBlogCategories.edges.map(
     ({ node }) => {

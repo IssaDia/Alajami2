@@ -30,7 +30,7 @@ function getBio (WrappedComponent) {
 }
 
 export const BioTitle = getBio(props => (
-  <h2 className='tracking-widest uppercase'>{props.bio.contentfulBlogCreator.titre} {props.bio.contentfulBlogCreator.nom}</h2>
+  <p className='tracking-widest uppercase'>{props.bio.contentfulBlogCreator.titre} {props.bio.contentfulBlogCreator.nom}</p>
 ))
 
 export const BioImage = getBio(props => (
