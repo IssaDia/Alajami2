@@ -155,10 +155,14 @@ A faire : pages next,previous sur chaque article
 
     not solved
 
-## 25/10
+## 26/10
 
 -> Travail sur le css des Cards des différents articles
 
--> Travail sur la pagination des pages d'articles (non résolu)
+-> Mise en place de la pagination des pages d'articles
 
+## 27/10
 
+-> Découverte d'Algolia pour la mise en place d'une barre de recherche (via doc)
+
+-> création et paramétrage d'Algolia

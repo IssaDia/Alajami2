@@ -26,14 +26,14 @@ function getLastPosts (WrappedComponent) {
 
 export const LastPosts = getLastPosts(props => (
   props.lastsPosts.allContentfulBlogPost.edges.map(({ node }) => {
-    return <Link to={`/themes/${node.postCategory.slug}/${node.slug}`} key={node.title}><li className='text-xs'>{node.title}</li></Link>
+    return <Link to={`/theme/${node.postCategory.slug}/${node.slug}`} key={node.title}><li className='text-xs'>{node.title}</li></Link>
   })
 )
 )
 
 export const LastPostsFooter = getLastPosts(props => (
   props.lastsPosts.allContentfulBlogPost.edges.map(({ node }) => {
-    return <Link to={`/themes/${node.postCategory.slug}/${node.slug}`} key={node.title}><li className='text-xs text-gray-800 hover:text-white'>{node.title}</li></Link>
+    return <Link to={`/theme/${node.postCategory.slug}/${node.slug}`} key={node.title}><li className='text-xs text-gray-800 hover:text-white'>{node.title}</li></Link>
   })
 )
 )

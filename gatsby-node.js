@@ -41,8 +41,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     paginate({
       createPage,
       items: posts,
-      itemsPerPage: 2,
-      pathPrefix: '/articles/' + slug,
+      itemsPerPage: 1,
+      pathPrefix: '/theme/' + slug,
       component: path.resolve('./src/templates/themeTemplate.js'),
       context: {
         slug
@@ -68,7 +68,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     console.log(prev)
     const categorySlug = node.postCategory.slug
     createPage({
-      path: '/themes/' + categorySlug + '/' + slug,
+      path: '/theme/' + categorySlug + '/' + slug,
       component: postTemplate,
       context: {
         slug,

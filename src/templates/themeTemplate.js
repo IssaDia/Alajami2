@@ -29,8 +29,8 @@ export default function ThemeTemplate ({ data, pageContext }) {
 }
 
 export const data = graphql`
-query ($slug: String!) {
-  allContentfulBlogPost(filter: {postCategory: {slug: {eq: $slug}}}) {
+query ($slug: String!, $skip: Int! = 0) {
+  allContentfulBlogPost(filter: {postCategory: {slug: {eq: $slug}}},limit: 1, skip: $skip) {
     edges {
       node {
         title

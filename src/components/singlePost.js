@@ -7,11 +7,11 @@ import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 export default function SinglePost ({ title, content, pageContext, categorySlug }) {
   const prev = pageContext.prev ? {
-    url: `/themes/${categorySlug}/${pageContext.prev.slug}`,
+    url: `/theme/${categorySlug}/${pageContext.prev.slug}`,
     title: pageContext.prev.title
   } : null
   const next = pageContext.next ? {
-    url: `/themes/${categorySlug}/${pageContext.next.slug}`,
+    url: `/theme/${categorySlug}/${pageContext.next.slug}`,
     title: pageContext.next.title
   } : null
   console.log(pageContext)
