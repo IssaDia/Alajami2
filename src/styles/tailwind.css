@@ -34,3 +34,11 @@ main {
   transition: visibility 0s 1s, opacity 1s linear;
   font-size: 10px;
 }
+
+.ais-SearchBox-form {
+  text-align: end;
+}
+
+.ais-SearchBox-resetIcon{
+  display: none
+}

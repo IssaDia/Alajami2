@@ -21,21 +21,19 @@ require('dotenv').config();
       content_type: 'blogPost',
       limit: 1000
     })
-    const posts = items.map((post) => ({
-      title: post.fields.title,
-      slug: post.fields.slug,
-      content: post.fields.content,
-      publishDate: post.fields.publishDate,
-      tags: post.fields.tags,
-      postCategory: post.fields.postCategory
+    const posts = items.map((item, index) => ({
+      objectID: index + 1,
+      title: item.fields.title,
+      slug: item.fields.slug,
+      content: item.fields.body,
+      publishDate: item.fields.publishDate,
+      tags: item.fields.tags,
+      postCategory: item.fields.postCategory
 
     }))
-    const indexedContent = await algoliaIndex
-      .saveObjects(posts, { autoGenerateObjectIDIfNotExist: true })
-      .then(({ objectIDs }) => {
-        console.log(objectIDs)
-      })
-
+    console.log(posts)
+    const indexedContent = await algoliaIndex.saveObjects(posts)
+    console.log(indexedContent)
     console.log('Indexed Content', indexedContent)
   } catch (error) {
     console.log(error)

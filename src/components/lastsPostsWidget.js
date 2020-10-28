@@ -5,7 +5,7 @@ import { LastPosts } from './lastsPosts'
 export default function BioWidget () {
   return (
     <Box title='Articles Récents' className='fixed'>
-      <ul className='flex flex-col items-center space-y-6 list-disc'>
+      <ul className='flex flex-col items-center space-y-6'>
         <LastPosts />
       </ul>
     </Box>

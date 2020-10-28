@@ -18,7 +18,7 @@ export default function Header (props) {
           <Link to='/themes' className='block mt-4 lg:inline-block lg:mt-0 text-white mr-4 text-center hover:border-white hover:bg-white hover:text-black py-2 px-4 uppercase'>
             Themes
           </Link>
-          <Link to='/' className='block mt-4 lg:inline-block lg:mt-0 text-white mr-4 text-center hover:border-white hover:bg-white hover:text-black py-2 px-4 uppercase'>
+          <Link to='/search' className='block mt-4 lg:inline-block lg:mt-0 text-white mr-4 text-center hover:border-white hover:bg-white hover:text-black py-2 px-4 uppercase'>
             Search
           </Link>
         </div>

@@ -166,3 +166,9 @@ A faire : pages next,previous sur chaque article
 -> Découverte d'Algolia pour la mise en place d'une barre de recherche (via doc)
 
 -> création et paramétrage d'Algolia
+
+## 28/10
+
+-> Indexation de chaque article sur l'interface d'Agolia via son Api et un script node
+
+-> Installation de la librairie InstantSearch pour gérer les recherches sur l'api Algolia
