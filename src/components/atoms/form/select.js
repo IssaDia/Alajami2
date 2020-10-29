@@ -1,18 +1,15 @@
 import React from 'react'
 
-export default function Select ({ title, categories }) {
-  console.log(categories)
-  const categoriesName = categories.allContentfulBlogCategories.edges.map(({ node }) => {
-    return <option key={node.title} title={node.title} />
+export default function Select ({ title, options }) {
+  const optionsData = options.map(({ node }, index) => {
+    return <option key={index}>{node.title}</option>
   })
-
-  console.log(categoriesName)
   return (
     <div>
-      <label class='block'>
-        <span class='text-gray-700'>{title}</span>
-        <select class='form-select block w-full mt-1'>
-          {categoriesName}
+      <label className='block'>
+        <span className='text-gray-700'>{title}</span>
+        <select className='form-select block w-full mt-1'>
+          {optionsData}
         </select>
       </label>
     </div>
