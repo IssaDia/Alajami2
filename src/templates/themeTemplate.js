@@ -1,10 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import Box from '../components/box'
-import LastsPostsWidget from '../components/lastsPostsWidget'
-import SingleThemeCard from '../components/single-theme-card'
-import Pagination from '../components/pagination'
+import Layout from '../components/organisms/layout'
+import Box from '../components/atoms/box'
+import LastsPostsWidget from '../components/organisms/lastsPostsWidget'
+import SingleThemeCard from '../components/organisms/single-theme-card'
+import Pagination from '../components/organisms/pagination'
 
 export default function ThemeTemplate ({ data, pageContext }) {
   const { previousPagePath, nextPagePath } = pageContext
@@ -43,8 +43,8 @@ query ($slug: String!, $skip: Int! = 0) {
       }
     }
   }
-contentfulBlogCategories(slug: {eq: $slug}) {
-  title
-}
+  contentfulBlogCategories(slug: {eq: $slug}) {
+    title
+  }
 }
 `

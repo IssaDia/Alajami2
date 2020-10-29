@@ -4,8 +4,8 @@ import React from 'react'
 export default function SingleThemeCard ({ title, theme, content, slug }) {
   return (
     <div className='max-w-sm rounded overflow-hidden shadow-lg font-playfair p-6 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105'>
-      <div className='h-20'>
-        <Link to={slug}><h2 className='uppercase text-black font-extrabold text-base'>{title}</h2></Link>
+      <div>
+        <Link to={slug}><h2 className='uppercase text-black font-extrabold text-sm'>{title}</h2></Link>
       </div>
       <div className='flex flex-row'>
         <span className='text-yellow-500 text-xs'>{theme}</span>

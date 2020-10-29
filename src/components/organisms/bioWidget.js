@@ -1,6 +1,6 @@
 import React from 'react'
-import Box from './box'
-import { BioTitle, BioImage, BioDescription } from './bio'
+import Box from '../atoms/box'
+import { BioTitle, BioImage, BioDescription } from '../../logic/bio'
 
 export default function BioWidget () {
   return (

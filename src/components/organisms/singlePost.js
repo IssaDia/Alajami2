@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Box from './box'
+import Box from '../atoms/box'
 import marked from 'marked'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'

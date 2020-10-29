@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '../components/layout'
-import IntroductionPost from '../components/IntroductionPost'
-import LastsPostsWidget from '../components/lastsPostsWidget'
+import Layout from '../components/organisms/layout'
+import IntroductionPost from '../components/organisms/IntroductionPost'
+import LastsPostsWidget from '../components/organisms/lastsPostsWidget'
 import { useStaticQuery, graphql } from 'gatsby'
 
 export default function Home () {

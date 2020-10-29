@@ -1,6 +1,6 @@
 import React from 'react'
-import Box from './box'
-import { LastPosts } from './lastsPosts'
+import Box from '../atoms/box'
+import { LastPosts } from '../../logic/lastsPosts'
 
 export default function BioWidget () {
   return (

@@ -1,10 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import Box from '../components/box'
-import ThemesCard from '../components/themes-Card'
-import LastsPostsWidget from '../components/lastsPostsWidget'
-import Pagination from '../components/pagination'
+import Layout from '../components/organisms/layout'
+import Box from '../components/atoms/box'
+import ThemesCard from '../components/organisms/themes-Card'
+import LastsPostsWidget from '../components/organisms/lastsPostsWidget'
+import Pagination from '../components/organisms/pagination'
 
 export default function ThemesTemplate ({ data, pageContext }) {
   console.log(data)

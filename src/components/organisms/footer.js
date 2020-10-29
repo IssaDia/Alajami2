@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { LastPostsFooter } from './lastsPosts'
-import { BioDescription, BioTitle } from './bio'
+import { LastPostsFooter } from '../../logic/lastsPosts'
+import { BioDescription, BioTitle } from '../../logic/bio'
 
 export default function Footer () {
   return (

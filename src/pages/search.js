@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from '../components/layout'
-import LastsPostsWidget from '../components/lastsPostsWidget'
+import Layout from '../components/organisms/layout'
+import LastsPostsWidget from '../components/organisms/lastsPostsWidget'
 import SearchComp from '../components/search/searchComp'
 
 export default function Search () {

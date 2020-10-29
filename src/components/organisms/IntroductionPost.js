@@ -1,5 +1,5 @@
 import React from 'react'
-import Box from './box'
+import Box from '../atoms/box'
 import marked from 'marked'
 
 export default function IntroductionPost ({ title, content }) {

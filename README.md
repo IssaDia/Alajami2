@@ -172,3 +172,11 @@ A faire : pages next,previous sur chaque article
 -> Indexation de chaque article sur l'interface d'Agolia via son Api et un script node
 
 -> Installation de la librairie InstantSearch pour gérer les recherches sur l'api Algolia
+
+-> Mise en place de le barre de recherche
+
+## 29/10
+
+-> Réorganisation avec l'Atomic Design découvert la veille sur Médium
+
+-> Création du formulaire de contact

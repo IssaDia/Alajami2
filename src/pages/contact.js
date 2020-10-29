@@ -1,12 +1,17 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../components/organisms/layout'
+import FormWidget from '../components/organisms/formWidget'
+import LastsPostsWidget from '../components/organisms/lastsPostsWidget'
 
 export default function Contact () {
   return (
     <Layout>
-      <Link to='/'>Home</Link>
-      <p>Send us a message!</p>
+      <div className='w-full lg:w-3/4 lg:px-4 lg:m-0  mt-8'>
+        <FormWidget />
+      </div>
+      <div className='w-full lg:w-1/4 px-4'>
+        <LastsPostsWidget />
+      </div>
     </Layout>
   )
 }

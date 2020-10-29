@@ -1,8 +1,8 @@
 
 import React from 'react'
-import Layout from '../components/layout'
-import SinglePost from '../components/singlePost'
-import LastsPostsWidget from '../components/lastsPostsWidget'
+import Layout from '../components/organisms/layout'
+import SinglePost from '../components/organisms/singlePost'
+import LastsPostsWidget from '../components/organisms/lastsPostsWidget'
 import { graphql } from 'gatsby'
 
 export default function SinglePostTemplate ({ data, pageContext }) {
