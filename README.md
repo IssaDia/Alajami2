@@ -179,4 +179,10 @@ A faire : pages next,previous sur chaque article
 
 -> Réorganisation avec l'Atomic Design découvert la veille sur Médium
 
--> Création du formulaire de contact
+-> Création du formulaire de contact avec Formik et Yup
+
+## 30/10
+
+  issue : impossible de soumettre le formulaire de contact
+
+  resolved: soumission du formulaire ok apré correction d'une erreur de validation Yup
