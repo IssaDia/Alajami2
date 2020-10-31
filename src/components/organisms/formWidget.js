@@ -8,14 +8,6 @@ const validationSchema = Yup.object().shape({
   category: Yup.string()
     .ensure()
     .required('Merci de spécifier un théme'),
-  surname: Yup.string()
-    .min(2, 'Trop court!')
-    .max(50, 'Trop long!')
-    .required('Merci de ne pas laisser vide'),
-  name: Yup.string()
-    .min(2, 'Trop court!')
-    .max(50, 'trop long!')
-    .required('Merci de ne pas laisser vide'),
   message: Yup.string()
     .min(10, 'Meesage trop court!')
     .max(500, 'Message trop long!')
@@ -48,18 +40,19 @@ export default function FormWidget () {
     <div>
       <Box title='Formulaire de contact'>
         <Formik
-          initialValues={{ name: '', surname: '', email: '', message: '', category: '' }}
+          initialValues={{ email: '', message: '', category: '' }}
           validationSchema={validationSchema}
           onSubmit={(values, { setSubmitting }) => {
-            console.log(values)
-            setSubmitting(false)
-            axios({
-              url: 'http://localhost:8000/contact/send',
-              method: 'post',
-              data: {
-                values
-              }
-            })
+            setSubmitting(true)
+            axios.post('http://localhost:5000/contact/send', values)
+              .then(function (response) {
+                setTimeout(() => {
+                  setSubmitting(false)
+                }, 100)
+              })
+              .catch(function (error) {
+                console.log(error)
+              })
           }}
         >
           {({
@@ -73,38 +66,6 @@ export default function FormWidget () {
             /* and other goodies */
           }) => (
             <form onSubmit={handleSubmit} className='w-full max-w-xl space-y-10 p-16 font-noticia'>
-              <div className='flex flex-wrap -mx-3 mb-6'>
-                <div className='w-full md:w-1/2 px-3 mb-6 md:mb-0'>
-                  <div className='flex flex-wrap border-b border-gray-900 py-2'>
-                    <Field
-                      id='name'
-                      name='name'
-                      type='text'
-                      className={'validate appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none ' + (touched.name && errors.name ? 'has-error' : null)}
-                      placeholder='Tapez votre nom'
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.name}
-                    />
-                  </div>
-                  {touched.name && errors.name ? <div className='w-full px-3 mb-6 md:mb-0'><span className='helper-text text-red-400 text-sm'>{errors.name}</span></div> : null}
-                </div>
-                <div className='w-full md:w-1/2 px-3'>
-                  <div className='flex items-center border-b border-gray-900 py-2'>
-                    <Field
-                      id='surname'
-                      name='surname'
-                      type='text'
-                      className={'validate appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none ' + (touched.surname && errors.surname ? 'has-error' : null)}
-                      placeholder='Tapez votre prénom'
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.surname}
-                    />
-                  </div>
-                </div>
-                {touched.name && errors.surname ? <div className='w-full md:w-1/2 px-3 mb-6 md:mb-0'><span className='helper-text text-red-400'>{errors.surname}</span></div> : null}
-              </div>
               <div className='w-full px-3'>
                 <div className='flex items-center border-b border-gray-900 py-2'>
                   <Field

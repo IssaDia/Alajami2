@@ -1,26 +1,35 @@
-const bodyParser = require('body-parser')
 const express = require('express')
+var cors = require('cors')
 const nodemailer = require('nodemailer')
+const dotenv = require('dotenv')
 require('dotenv').config()
 
-const app = express()
-app.use(bodyParser.urlencoded())
+if (process.env.NODE_ENV !== 'production') dotenv.config()
 
-const contactAddress = 'issadiapro@gmail.com'
+const app = express()
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+app.use(cors())
+
+const gmailAddress = process.env.GMAIL_ADDRESS
+const gmailPass = process.env.GMAIL_PASSWORD
+
+console.log(gmailAddress)
 
 const mailer = nodemailer.createTransport({
-  service: 'gmail',
+  service: 'Gmail',
   auth: {
-    user: 'issadiapro@gmail.com',
-    pass: 'shyrone59'
+    user: gmailAddress,
+    pass: gmailPass
   }
 })
 
 app.post('/contact/send', function (req, res) {
+  console.log(req.body)
   mailer.sendMail(
     {
-      from: req.body.name + ' ' + req.body.surname,
-      to: [contactAddress],
+      from: req.body.email,
+      to: [gmailAddress],
       subject: req.body.category || '[No subject]',
       html: req.body.message || '[No message]'
     },
@@ -31,4 +40,4 @@ app.post('/contact/send', function (req, res) {
   )
 })
 
-app.listen(3000)
+app.listen(5000)

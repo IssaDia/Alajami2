@@ -186,3 +186,13 @@ A faire : pages next,previous sur chaque article
   issue : impossible de soumettre le formulaire de contact
 
   resolved: soumission du formulaire ok apré correction d'une erreur de validation Yup
+
+  ## 31/10
+
+-> Ajustements du serveur crée avec node pour reçevoir des mails du formulaire de contact 
+
+  issue: variables d'nevironnements non disponible dans le script
+
+  solved: mettre le script à la racine avec le fichier .ENV
+
+-> Envoi de mails du formulaire de contact sur l'adresse Gmail Ok
