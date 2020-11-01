@@ -1,5 +1,6 @@
-import { Link } from 'gatsby'
 import React from 'react'
+import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 
 export default function SingleThemeCard ({ title, theme, content, slug }) {
   return (
@@ -20,4 +21,11 @@ export default function SingleThemeCard ({ title, theme, content, slug }) {
       </Link>
     </div>
   )
+}
+
+SingleThemeCard.propTypes = {
+  title: PropTypes.string,
+  theme: PropTypes.string,
+  content: PropTypes.string,
+  slug: PropTypes.string
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import Box from '../atoms/box'
 import marked from 'marked'
@@ -14,7 +15,6 @@ export default function SinglePost ({ title, content, pageContext, categorySlug 
     url: `/theme/${categorySlug}/${pageContext.next.slug}`,
     title: pageContext.next.title
   } : null
-  console.log(pageContext)
   return (
     <Box title={title}>
       <div>
@@ -44,4 +44,11 @@ export default function SinglePost ({ title, content, pageContext, categorySlug 
       </div>
     </Box>
   )
+}
+
+SinglePost.propTypes = {
+  title: PropTypes.string,
+  theme: PropTypes.string,
+  pageContext: PropTypes.object,
+  categorySlug: PropTypes.string
 }

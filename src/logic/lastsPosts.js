@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 const { StaticQuery, graphql, Link } = require('gatsby')
 
 function getLastPosts (WrappedComponent) {
@@ -37,3 +38,7 @@ export const LastPostsFooter = getLastPosts(props => (
   })
 )
 )
+
+getLastPosts.propTypes = {
+  WrappedComponent: PropTypes.func
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Header from './header'
 import Jumbotron from './jumbotron'
 import BioWidget from './bioWidget'
@@ -52,4 +53,8 @@ export default function Layout ({ children }) {
       </div>
     </>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.object)
 }

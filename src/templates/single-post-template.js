@@ -1,5 +1,6 @@
 
 import React from 'react'
+import PropTypes from 'prop-types'
 import Layout from '../components/organisms/layout'
 import SinglePost from '../components/organisms/singlePost'
 import LastsPostsWidget from '../components/organisms/lastsPostsWidget'
@@ -33,3 +34,8 @@ query ($slug: String!) {
         }
 }
 `
+
+SinglePostTemplate.propTypes = {
+  data: PropTypes.object,
+  pageContext: PropTypes.object
+}

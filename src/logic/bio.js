@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 const { StaticQuery, graphql } = require('gatsby')
 
@@ -42,3 +43,7 @@ export const BioDescription = getBio(props => (
   <p className=''>{props.bio.contentfulBlogCreatorBioTextNode.bio}</p>
 )
 )
+
+getBio.propTypes = {
+  WrappedComponent: PropTypes.func
+}

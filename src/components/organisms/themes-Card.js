@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
 export default function ThemesCard ({ title, slug }) {
@@ -14,4 +15,9 @@ export default function ThemesCard ({ title, slug }) {
       </div>
     </>
   )
+}
+
+ThemesCard.propTypes = {
+  title: PropTypes.string,
+  slug: PropTypes.string
 }

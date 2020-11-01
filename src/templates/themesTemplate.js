@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/organisms/layout'
 import Box from '../components/atoms/box'
@@ -7,7 +8,6 @@ import LastsPostsWidget from '../components/organisms/lastsPostsWidget'
 import Pagination from '../components/organisms/pagination'
 
 export default function ThemesTemplate ({ data, pageContext }) {
-  console.log(data)
   const { previousPagePath, nextPagePath } = pageContext
   const themesData = data.allContentfulBlogCategories.edges.map(
     ({ node }) => {
@@ -47,3 +47,8 @@ export const data = graphql`
     }
   }
 `
+
+ThemesTemplate.propTypes = {
+  data: PropTypes.object,
+  pageContext: PropTypes.object
+}

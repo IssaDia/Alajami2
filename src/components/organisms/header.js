@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
-export default function Header (props) {
+export default function Header () {
   const [isExpanded, toggleExpansion] = useState(false)
   return (
     <nav className='flex items-center justify-between flex-wrap bg-black p-6'>

@@ -196,3 +196,7 @@ A faire : pages next,previous sur chaque article
   solved: mettre le script à la racine avec le fichier .ENV
 
 -> Envoi de mails du formulaire de contact sur l'adresse Gmail Ok
+
+## 01/11
+
+-> Installation de la librairie prop-types et mise en place de Proptypes 

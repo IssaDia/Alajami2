@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/organisms/layout'
 import Box from '../components/atoms/box'
@@ -8,7 +9,6 @@ import Pagination from '../components/organisms/pagination'
 
 export default function ThemeTemplate ({ data, pageContext }) {
   const { previousPagePath, nextPagePath } = pageContext
-  console.log(pageContext)
   const singleThemeData = data.allContentfulBlogPost.edges.map(({ node }) => {
     return <SingleThemeCard key={node.title} title={node.title} theme={data.contentfulBlogCategories.title} content={node.body.childMarkdownRemark.excerpt} slug={node.slug} />
   })
@@ -48,3 +48,8 @@ query ($slug: String!, $skip: Int! = 0) {
   }
 }
 `
+
+ThemeTemplate.propTypes = {
+  data: PropTypes.object,
+  pageContext: PropTypes.object
+}

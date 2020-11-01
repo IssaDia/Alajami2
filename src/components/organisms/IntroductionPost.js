@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Box from '../atoms/box'
 import marked from 'marked'
 
@@ -10,4 +11,9 @@ export default function IntroductionPost ({ title, content }) {
       </div>
     </Box>
   )
+}
+
+IntroductionPost.propTypes = {
+  title: PropTypes.string,
+  content: PropTypes.string
 }
