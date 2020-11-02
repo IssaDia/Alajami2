@@ -200,3 +200,7 @@ A faire : pages next,previous sur chaque article
 ## 01/11
 
 -> Installation de la librairie prop-types et mise en place de Proptypes 
+
+## 02/11
+
+-> Adaptation du script permettant de récupérer des articles du site wordpress sur Contentful
