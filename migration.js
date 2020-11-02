@@ -1,12 +1,12 @@
 const contentful = require('contentful')
 
 const client = contentful.createClient({
-  space: 'azs4aj6mbubw',
-  accessToken: 'uM-nm0vo0K4qQoXK-ttySacz3OLoIo9sp3e1ShN4BHA'
+  space: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
 })
 
 client.getSpace()
   .then((space) => {
-    console.log(space.getEnvironment('master'))
+    console.log(space)
   })
   .catch(console.error)
