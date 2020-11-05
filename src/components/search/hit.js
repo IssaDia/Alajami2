@@ -15,5 +15,7 @@ export default ({ hit }) => (
       </div>
     </Link>
   </div>
+  
 
 )
+

@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function TextArea (props) {
+export default function TextArea ({ row, message }) {
   return (
     <div>
       <label className='block'>
-        <textarea className='form-textarea mt-1 block w-full focus:border-white' rows={props.row} placeholder={props.message} />
+        <textarea className='form-textarea mt-1 block w-full focus:border-white' rows={row} placeholder={message} />
       </label>
     </div>
   )

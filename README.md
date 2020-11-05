@@ -204,3 +204,13 @@ A faire : pages next,previous sur chaque article
 ## 02/11
 
 -> Adaptation du script permettant de récupérer des articles du site wordpress sur Contentful
+
+## 05/11
+
+-> installation des outils pour tester mon application : React testing-library et Jest
+
+-> Réorganisation de l'atomic design
+
+  issue : path.startsWith is not a function
+
+  resolved: faire attention à la déstructuration des props dans les composants
