@@ -5,7 +5,6 @@ import SinglePost from '../components/organisms/singlePost';
 import LastsPostsWidget from '../components/organisms/lastsPostsWidget';
 import { graphql } from 'gatsby';
 
-
 export default function SinglePostTemplate({ data, pageContext }) {
   return (
     <Layout>
@@ -36,8 +35,8 @@ export const data = graphql`
         slug
       }
     }
-  }   
-      `;
+  }
+`;
 
 SinglePostTemplate.propTypes = {
   data: PropTypes.object,
