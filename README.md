@@ -7,10 +7,10 @@ mais des fonctionnalités tels que la possibilité de poster des commentaires so
 
 ## Installation
 
-1/ Installer Node.js, Gatsby et Git
+1/ Installer Node.js, Gatsby et Git <br />
   suivre ce tutoriel [ici](ttps://www.gatsbyjs.com/tutorial/part-zero/)
 
-2/ Récupérer le code source (sur votre machine)
+2/ Récupérer le code source (sur votre machine) <br />
   git clone https://github.com/IssaDia/Alajami2
 
 3/ Installer et créer un compte Contentful 
