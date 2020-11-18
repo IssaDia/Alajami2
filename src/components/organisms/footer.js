@@ -31,7 +31,6 @@ export default function Footer() {
                 styles="border-b-2 border-gray-600 text-gray-800 hover:text-white"
                 name="Contact"
               />
-             
             </ul>
           </div>
         </div>
