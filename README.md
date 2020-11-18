@@ -73,4 +73,4 @@ Si vous pensez en avoir fini avec la fonction sur laquelle vous travaillez, vous
 
 ## Credits
 
-projet supervisé par [Rayed Benbrahim](https://www.contentful.com/r/knowledgebase/gatsbyjs-and-contentful-in-five-minutes/)
+projet supervisé par [Rayed Benbrahim](https://www.linkedin.com/in/rayedbenbrahim/)
