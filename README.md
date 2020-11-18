@@ -19,22 +19,7 @@ mais des fonctionnalités tels que la possibilité de poster des commentaires so
 4/ Installer et créer un compte Algolia <br />
    suivre ce tutoriel  [ici](https://www.algolia.com/doc/guides/getting-started/quick-start/tutorials/quick-start-with-the-api-client/javascript/?language=javascript#install)
 
-5/ Créer un fichier .env et compléter le fichier avec vos identifiants comme ci-dessous : 
-
-*identifiants Contentful* <br />
-CONTENTFUL_ACCESS_TOKEN= ************** <br />
-CONTENTFUL_SPACE_ID= ************** <br />
-CONTENTFUL_ENVIRONMENT= ************** <br />
-
-*identifiants Algolia* <br />
-GATSBY_ALGOLIA_APP_ID= ************** <br />
-GATSBY_ALGOLIA_SEARCH_KEY= ************** <br />
-ALGOLIA_ADMIN_KEY= ************** <br />
-ALGOLIA_INDEX_NAME= ************** <br />
-
-*identifiants mail* <br />
-GMAIL_ADDRESS= ************** <br />
-GMAIL_PASSWORD= ************** <br />
+5/ Renommer le fichier .env.exemple en .env  et compléter le fichier avec vos identifiants <br />
 
 6/ Accéder à l'application <br />
 
