@@ -208,3 +208,7 @@
   issue : path.startsWith is not a function
 
   resolved: faire attention à la déstructuration des props dans les composants
+
+  ## 18/11
+
+  -> Travail sur la documentation du projet sur Git

@@ -62,3 +62,15 @@ Si vous pensez en avoir fini avec la fonction sur laquelle vous travaillez, vous
 
 
 
+## Features
+
+* **page d'accueil** - page d'accueil classique de blog comprenant une introduction au contenu du blog, une présentation de l'auteur principal et un widget comprenant les derniers articles parus
+* **choix d'un théme** - page comprenant une liste des différents thémes abordés dans le blog
+* **choix d'un articles** - page comprenant une liste des articles selon le théme choisi
+* **affichage d'un article** - page comprenant un article avec la possibilité de choisir un article précédent ou suivant dans le même théme
+* **fonction recherche** - possibilité de faire une recherche d'une liste d'articles qui comportent le mot recherché par l'intérmédiiare de la barre de recherche
+* **formulaire de contact** - possibilité d'envoi d'un message par l'utilisateur que l'on reçoit dans la boîte mail parametrée au préalable
+
+## Credits
+
+projet supervisé par [Rayed Benbrahim](https://www.contentful.com/r/knowledgebase/gatsbyjs-and-contentful-in-five-minutes/)
