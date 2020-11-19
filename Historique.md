@@ -14,9 +14,10 @@
 
 #### 09/10
 
--> Prise en main Tailwindcss (doc + tutoriel) 
+-> Prise en main Tailwindcss (doc + tutoriel)
 
 -> Navbar Responsive Ok
+
 #### 10/10
 
 -> Jumbotron Ok
@@ -33,12 +34,12 @@
 
 -> Choix et installation de Gatsby-image
 
-    issue : 
+    issue :
     Error in "/opt/lampp/htdocs/gatsby/alajami/node_modules/gatsby-plugin-sharp/gatsby-node.js":
     Something went wrong installing the "sharp" module
     Cannot find module '../build/Release/sharp.node'
 
-    solved : 
+    solved :
 
     here steps to resolve this issue (via Github):
 
@@ -50,7 +51,7 @@
 
 ->Affichage d'une image responsive
 
-### 12/10 
+### 12/10
 
 -> Découverte Contentful (doc)
 
@@ -70,7 +71,7 @@
 
 -> Travail sur le Grid de l'application via Tailwind Css
 
--> Récupération d'un texte en markdown et le convertir en Html par le biais d'un parser 
+-> Récupération d'un texte en markdown et le convertir en Html par le biais d'un parser
 
 -> Installation d'un parser : choix de Marked
 
@@ -83,7 +84,7 @@
 -> Recherche sur les relations entre les différentes collections (doc Contentful)
 
     remarque : toujours faire  le modéle des données en amont même si le NoSql permet une plus grande liberté de modulation
-    
+
 -> Création d'articles et de leurs catégories via la plateforme Contenful
 
 -> Affichage de Crads avec les différents thémes d'articles
@@ -98,7 +99,7 @@
 
 -> A considérer : rich text contenful plugin
 
--> Requête pour récupérer tous les articles d'un même théme 
+-> Requête pour récupérer tous les articles d'un même théme
 
     issue : Variable "$slug" of required type "String!" was not provided
 
@@ -116,16 +117,15 @@
 
 -> Réorganisation du layout
 
-
 ### 18/10
 
 -> Pagination pour la liste des différents thémes du blog ( via documentation
 
 ### 19/10
 
-  issue : e GraphQL query in the non-page component "/opt/lampp/htdocs/gatsby/alajami/src/templates/themeTemplate.js" will not be run.
+issue : e GraphQL query in the non-page component "/opt/lampp/htdocs/gatsby/alajami/src/templates/themeTemplate.js" will not be run.
 
-  resolved : mettre les creations de page dans une seule et même fonction
+resolved : mettre les creations de page dans une seule et même fonction
 
 -> Installation du plugin Catch Links de Gatsby pour permettre de ne pas recharger les pages externes
 
@@ -177,23 +177,23 @@
 
 ### 30/10
 
-  issue : impossible de soumettre le formulaire de contact
+issue : impossible de soumettre le formulaire de contact
 
-  resolved: soumission du formulaire ok apré correction d'une erreur de validation Yup
+resolved: soumission du formulaire ok apré correction d'une erreur de validation Yup
 
-  ### 31/10
+### 31/10
 
--> Ajustements du serveur crée avec node pour reçevoir des mails du formulaire de contact 
+-> Ajustements du serveur crée avec node pour reçevoir des mails du formulaire de contact
 
-  issue: variables d'nevironnements non disponible dans le script
+issue: variables d'nevironnements non disponible dans le script
 
-  solved: mettre le script à la racine avec le fichier .ENV
+solved: mettre le script à la racine avec le fichier .ENV
 
 -> Envoi de mails du formulaire de contact sur l'adresse Gmail Ok
 
 ### 01/11
 
--> Installation de la librairie prop-types et mise en place de Proptypes 
+-> Installation de la librairie prop-types et mise en place de Proptypes
 
 ### 02/11
 
@@ -205,10 +205,20 @@
 
 -> Réorganisation de l'atomic design
 
-  issue : path.startsWith is not a function
+issue : path.startsWith is not a function
 
-  resolved: faire attention à la déstructuration des props dans les composants
+resolved: faire attention à la déstructuration des props dans les composants
 
-  ## 18/11
+## 18/11
 
-  -> Travail sur la documentation du projet sur Git
+-> Travail sur la documentation du projet sur Git
+
+## 19/11
+
+-> Veille sur les linter
+-> Rédaction de 2 posts sur ESlint et Prettier
+-> Utilisation de ESLint et Prettier sur le Projet via le module gatsby dedié
+
+    issue : les semi-colons restente affichés pendant mon formattage on save
+    utilisation de la commande git reset --hard HEAD pour revenir au commit précédent afin de reprendre l'installation du module à zéro
+    solved : résolu en suivant le tuto du module gatsby et les posts de mon notion

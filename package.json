@@ -36,6 +36,7 @@
     "gatsby-plugin-catch-links": "^2.3.15",
     "gatsby-plugin-fontawesome-css": "^1.0.0",
     "gatsby-plugin-postcss": "^3.0.1",
+    "gatsby-plugin-prettier-eslint": "^1.0.4",
     "gatsby-plugin-sharp": "^2.6.40",
     "gatsby-source-contentful": "^2.3.51",
     "gatsby-source-faker": "^2.3.13",
@@ -45,6 +46,7 @@
     "marked": "^1.2.0",
     "nodemailer": "^6.4.14",
     "postcss": "^8.1.1",
+    "prettier": "^2.1.2",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -58,7 +60,8 @@
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.1",
     "eslint": "^7.13.0",
-    "prettier": "2.1.2"
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-react": "^7.21.5"
   },
   "repository": {
     "type": "git",
@@ -66,8 +69,5 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "prettier": {
-    "singleQuote": true
   }
 }

@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Layout from '../components/organisms/layout';
-import SinglePost from '../components/organisms/singlePost';
-import LastsPostsWidget from '../components/organisms/lastsPostsWidget';
-import { graphql } from 'gatsby';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Layout from '../components/organisms/layout'
+import SinglePost from '../components/organisms/singlePost'
+import LastsPostsWidget from '../components/organisms/lastsPostsWidget'
+import { graphql } from 'gatsby'
 
 export default function SinglePostTemplate({ data, pageContext }) {
   return (
@@ -14,13 +14,13 @@ export default function SinglePostTemplate({ data, pageContext }) {
           content={data.contentfulBlogPost.body.childMarkdownRemark.html}
           pageContext={pageContext}
           categorySlug={data.contentfulBlogPost.postCategory.slug}
-        />
-      </div>
+        />{' '}
+      </div>{' '}
       <div className="w-full lg:w-1/4 px-4">
         <LastsPostsWidget />
-      </div>
+      </div>{' '}
     </Layout>
-  );
+  )
 }
 export const data = graphql`
   query($slug: String!) {
@@ -36,9 +36,9 @@ export const data = graphql`
       }
     }
   }
-`;
+`
 
 SinglePostTemplate.propTypes = {
   data: PropTypes.object,
   pageContext: PropTypes.object,
-};
+}

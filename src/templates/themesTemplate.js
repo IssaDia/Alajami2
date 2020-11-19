@@ -1,39 +1,41 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import Layout from '../components/organisms/layout';
-import Box from '../components/atoms/box';
-import ThemesCard from '../components/organisms/themes-Card';
-import LastsPostsWidget from '../components/organisms/lastsPostsWidget';
-import Pagination from '../components/organisms/pagination';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import Layout from '../components/organisms/layout'
+import Box from '../components/atoms/box'
+import ThemesCard from '../components/organisms/themes-Card'
+import LastsPostsWidget from '../components/organisms/lastsPostsWidget'
+import Pagination from '../components/organisms/pagination'
 
 export default function ThemesTemplate({ data, pageContext }) {
-  const { previousPagePath, nextPagePath } = pageContext;
+  const { previousPagePath, nextPagePath } = pageContext
   const themesData = data.allContentfulBlogCategories.edges.map(({ node }) => {
     return (
       <ThemesCard key={node.title} title={node.title} slug={node.slug}>
-        {node.title}
+        {' '}
+        {node.title}{' '}
       </ThemesCard>
-    );
-  });
+    )
+  })
   return (
     <Layout>
       <div className="w-full lg:w-3/4 lg:px-4 sm:h-42 lg:m-0 mt-8">
         <Box title="Themes">
           <div className="grid grid-rows-3 grid-flow-col gap-4 mt-16">
-            {themesData}
-          </div>
+            {' '}
+            {themesData}{' '}
+          </div>{' '}
           <Pagination
             previousPagePath={previousPagePath}
             nextPagePath={nextPagePath}
-          />
-        </Box>
-      </div>
+          />{' '}
+        </Box>{' '}
+      </div>{' '}
       <div className="w-full lg:w-1/4 px-4">
         <LastsPostsWidget />
-      </div>
+      </div>{' '}
     </Layout>
-  );
+  )
 }
 
 export const data = graphql`
@@ -47,9 +49,9 @@ export const data = graphql`
       }
     }
   }
-`;
+`
 
 ThemesTemplate.propTypes = {
   data: PropTypes.object,
   pageContext: PropTypes.object,
-};
+}
